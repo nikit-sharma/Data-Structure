@@ -1,0 +1,31 @@
+
+public class Solution {
+
+/*	Binary Tree Node class
+ * 
+ * class BinaryTreeNode<T> {
+		T data;
+		BinaryTreeNode<T> left;
+		BinaryTreeNode<T> right;
+		
+		public BinaryTreeNode(T data) {
+			this.data = data;
+		}
+	}
+	*/
+	
+	public static int sum(BinaryTreeNode<Integer> root){
+ 
+          if(root==null)
+          {
+              return 0;
+          }
+        
+        
+        int a=sum(root.left);
+        int b=sum(root.right);
+        return a+b+root.data ;
+    
+	}
+	
+}
